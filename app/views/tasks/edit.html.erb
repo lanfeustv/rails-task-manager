@@ -1,0 +1,11 @@
+<h1>Edit New Task</h1>
+
+<%= form_for(@task) do |t| %>
+  <%= t.label :title %>
+  <%= t.text_field :title, class: 'form-control'  %>
+  <%= t.label :details %>
+  <%= t.text_field :details, class: 'form-control'  %>
+  <%= t.label :completed %>
+  <%= t.text_field :completed, class: 'form-control'  %>
+  <%= t.submit class: 'btn btn-primary' %>
+<% end %>
